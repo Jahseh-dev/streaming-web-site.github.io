@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importé les polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- liéer le css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>StreamPower</title>
+    <style type="text/css"> 
+        a:link 
+        { 
+         text-decoration:none; 
+        } 
+    </style>
+</head>
+<body>
+    <!-- le haut de page -->
+    <header class="top">
+        <div class="titre">
+            <h1>StreamPower</h1>
+        </div>
+        <nav>
+            <div class="head-button">
+                        <li><a class="link" href="#footer">A propos</a></li>
+                        <li><a class="link" href="index.html">Accueil</a></li>
+                        <li><a class="link" href="#films">Film</a></li>
+                        <li><a class="link" href="#series">Série</a></li>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Tapez ici" name="search">
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
+        </nav>
+        <div class="autentification">
+            <a class="connecter" href="">Se connecter</a>
+            <a class="inscrire" href="">S'inscrire</a>
+        </div>
+        <div class="form-group">
+            <label for="choix-langues">Langues</label>
+            <select name="langues" id="langues">
+                <option selected="selected">Français</option>
+                <option>Anglais</option>
+                <option>Espagnol</option>
+            </select>
+        </div>
+        <!-- slogan -->
+        <p class="slogan">Les meilleures films en streaming gratuitement maintenant...</p>
+        <!-- défilement -->
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            Sortie de la semaine : Jurassic Word 3 : Le monde d'après ; Au-delà des Sommets ; Obi wan - 4ème épisode
+        </marquee>
+    </header>
+    <!-- partie principale -->
+    <main>
+        <div class="media">
+            <!-- Section Films -->
+            <section class="film-section" id="films">
+                <h3 class="films-header">Films</h3>
+                <div class="en-dessous-titre">
+                    <!-- images films -->
+                    <div class="content">
+                        <article class="one">
+                            <img class="tranformers main" src="images/tranformers.jpg" alt="tranformers">
+                            <h4 class="films">Tranformers</h4>         
+                        </article>
+                        <article class="two">
+                            <img class="batman main" src="images/batman.jpg" alt="batman">
+                            <h4 class="films">Batman</h4>
+                        </article>
+                        <article class="three">
+                            <img class="iron-man main" src="images/iron-man.jpeg" alt="iron-man">
+                            <h4 class="films">Iron Man</h4>
+                        </article>
+                        <article class="four">
+                            <img class="avatar main" src="images/avatar.jpg" alt="avatar">
+                            <h4 class="films">Avatar</h4>
+                        </article>
+                    </div>
+                    <!-- texte de présentation des films -->
+                    <div class="synopsis-films">
+                        <p class="transformers">
+                            Des robots transformables, les Decepticons, apparaissent sur Terre. Ils veulent retrouver l'énergie AllSpark, qui donne vie à n'importe quel objet électronique ou mécanique et lever une armée pour dominer l'Univers. 
+                            Mais sur leur route se dressera Sam Witwicky et les Autobots d'Optimus Prime prêt à tout pour défendre la Terre de Mégatron, chef des Decepticons.
+                        </p>
+                        <p class="batman">
+                            Çela fait un an que Batman erre dans les rues de gotham city et les criminels ont peur de lui mais une nouvelle vague de cambriolages et de crimes voit le jour à cause d'un criminel nouveau : le Joker.
+                            Le joker est un être énigmatique : il ne recule devant rien, n'a aucune morale et parle beaucoup.
+                        </p>
+                        <p class="iron-man">
+                            Iron Man raconte l'histoire de Tony Stark, un industriel milliardaire et inventeur de génie qui est kidnappé et contraint de construire une arme dévastatrice.
+                            Au lieu de cela, en utilisant son intelligence et son ingéniosité, Tony construit une armure de haute technologie et échappe à la captivité.
+                        </p>
+                        <p class="avatar">
+                            Jake Sully, ancien marine aujourd'hui paraplégique, est envoyé en mission sur la lointaine planète Pandora, pour remplacer son défunt frère jumeau. 
+                            Il intègre le programme Avatar, dirigé par Grace Augustine, afin de mener des contacts diplomatiques avec les Na'vis, l'espèce habitant la planète.
+                        </p>
+                    </div>
+                    <!-- bouton -->
+                    <form class="bouton-regarder" action="#">
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+            <!-- Section Série -->
+            <section class="series-section">
+                <h3 class="titre-series" id="series">Séries</h3>
+                <div class="all-series-part">
+                    <div class="series">
+                        <article class="article-one">
+                            <img class="obiwan" src="images/obiwan.jpg" alt="obiwan">
+                            <h4 class="series">Obi-Wan</h4>         
+                        </article>
+                        <article class="article-two">
+                            <img class="gameoftrones" src="images/game.jpg" alt="gameoftrones">
+                            <h4 class="series">Game of Trones</h4>
+                        </article>
+                        <article class="article-three">
+                            <img class="mandalorian" src="images/mandalorian.jpg" alt="mandalorian">
+                            <h4 class="series">The Mandalorian</h4>
+                        </article>
+                        <article class="article-four">
+                            <img class="expanse" src="images/expanse.jpg" alt="expanse">
+                            <h4 class="series">The Expanse</h4>
+                        </article>
+                    </div>
+                    <div class="synopsis-films">
+                        <p class="transformers">
+                            L’action se déroule dix ans après la fin tragique de STAR WARS : LA REVANCHE DES SITH. 
+                            Obi-Wan y avait subi sa plus grande défaite et assisté à la déchéance de son meilleur ami, l’apprenti Jedi Anakin Skywalker, 
+                            qui avait rejoint le Côté Obscur en devenant le seigneur Sith Dark Vador.
+                        </p>
+                        <p class="batman">
+                            Après cinquante épisodes de magouilles politiques, les tensions atteignent des sommets dans le royaume des Sept Couronnes. La capitale, Port-Réal,
+                            est le théâtre de complots au cœur même du pouvoir tandis que les menaces se multiplient à la périphérie du territoire.
+                        </p>
+                        <p class="iron-man">
+                            L'histoire se déroule cinq ans après Le Retour du Jedi et vingt-cinq ans avant
+                            Le Réveil de la Force et raconte les aventures d'un mercenaire mandalorien au-delà des territoires contrôlés par la Nouvelle République.
+                        </p>
+                        <p class="avatar">
+                            Au XXIIe siècle, le Système solaire est entièrement colonisé. Trois grandes puissances se trouvent impliquées dans une guerre froide : la Terre, appauvrie en ressources et dirigée par les Nations unies ; 
+                            Mars, colonie devenue indépendante sous l'égide de la République du Congrès martien et disposant de la flotte la plus avancée technologiquement.
+                        </p>
+                    </div>
+                    <!-- bouton -->
+                    <form class="bouton-regarder" action="#">
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                        <button class="regarder" type="submit">Regarder</button>
+                    </form>
+                </div>
+            </section>
+        
+            
+            
+        <div class="actualites">
+            <h3 class="titre-series">Actualités</h3>
+            <div class="tout">
+                <section class="actu-films">
+                    <div class="actu">
+                        <h3 class="titre-actu">Manga</h3>
+                        <div class="texte-actu">
+                            <li>One piece épisode 973</li>
+                            <li>Naruto épisode 557</li>
+                            <li>L'attaque des titans épisode 120</li>
+                            <li>Tockyo Revenger épisode 1000</li>
+                        </div>
+                    </div>
+                </section>
+                <section class="actu-films">
+                    <div class="actu">
+                        <h3 class="titre-actu">Films</h3>
+                        <div class="texte-actu">
+                            <li>Top Gun 2 - Malverik</li>
+                            <li>Doctor Strange</li>
+                            <li>Harry Potter - X</li>
+                            <li>Batman - Le retour</li>    
+                        </div>   
+                    </div>
+                </section>
+                <section class="actu-films">
+                    <div class="actu">
+                        <h3 class="titre-actu">Football</h3>
+                        <div class="texte-actu">
+                            <li>PSG - OM</li>
+                            <li>Real Madrid - Barcelone</li>
+                            <li>Liverpool - Monaco</li>
+                            <li>Lyon - Manchester United</li>    
+                        </div>   
+                    </div>
+                </section>
+                <section class="actu-films">
+                    <div class="actu">
+                        <h3 class="titre-actu">BasketBall</h3>
+                        <div class="texte-actu">
+                            <li>Boston Celtics - Golden State Warrior</li>
+                            <li>Heat - Bucks</li>
+                            <li>Nets - Hawks</li>
+                            <li>Hornets - Knicks</li>    
+                        </div>   
+                    </div>
+                </section>
+            </div>
+            <div class="area">Nouveautés chaques semaines</div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="foot">
+            <h3>Resources</h3>
+            <li class="support"><a href="https://fr.wikipedia.org/" target="_blank">Wikipédia</a></li>
+            <li class="support"><a href="https://www.allocine.fr" target="_blank">Allociné</a></li>
+            <li class="support"><a href="https://www.disneyplus.com" target="_blank">Disney +</a></li>
+        </div>
+        <div class="foot">
+            <h3>Support</h3>
+            <li class="support"><a href="https://gmail.com" target="_blank">support@gmail.com</a></li>
+            <li class="support"><a href="#">07 42 56 51 20</a></li>
+        </div>
+        <div class="foot">
+            <h3>Copywright</h3>
+            <li class="support"><a href="#"> &copy; JahsehFirm</a></li>
+            <li class="support">Tous droits réservés</li>
+        </div>
+        <div class="foot">
+            <h3>Soon</h3>
+            <li class="support">Projet secret ...</li>
+        </div>
+    </footer>
+</body>
+</html>

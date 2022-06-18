@@ -1,0 +1,708 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* effet de scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* photo arrière plan */
+
+header.top {
+    background-image: url(../images/background.jpg);
+    height: 500px;
+    background-size: cover;
+    height: 600px;
+}
+
+/* Titre */
+
+div.titre {
+    font-size: 60px;
+    height: 120px;
+    color: lightgoldenrodyellow;
+    padding: 15px;
+}
+
+/* Menu de navigation */
+
+.head-button {
+    font-size: 35px;
+    width: 800px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+    position: absolute;
+    margin-left: 200px;
+    top: 230px;
+}
+
+a.link {
+    color: white;
+}
+
+
+
+/* Barre de recherche */
+
+.search {
+    display: flex;
+    height: 50px;
+    width: 450px;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 7.5px;
+    top: 230px;
+    padding: 5px;
+    margin-right: 300px;
+}
+
+
+.search input[type="text"] {
+    border-bottom: 1px solid black;
+    background: transparent;
+    height: 45px;
+    width: 250px;
+    color: black;
+    outline: 2px ridge black;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.search button[type="submit"] {
+    border-style: dashed;
+    background: black;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.search button[type="submit"]:hover {
+    background-color: green;
+    border-style: solid;
+    cursor: pointer;
+}
+
+
+/*  s'inscrire / se connecter */
+
+.autentification {
+    font-size: 30px;
+    height: 90px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.connecter {
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    width: 200px;
+    color: white;
+}
+
+a.inscrire {
+    border-style: solid;
+    border-radius: 25px;
+    width: 160px;
+    text-align: center;
+    color: white;
+}
+
+a.connecter:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+a.inscrire:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* Choix de la langue */
+
+label {
+    color: white;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+select {
+    border-style: solid;
+    border-radius: 25px;
+    background-color: #E8DCC2;
+    color: black;
+    font-size: 25px
+}
+
+.form-group {
+    width: 220px;
+    position: absolute;
+    right: 60px;
+    top: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* slogan */
+
+p.slogan {
+    margin-left: 50px;
+    margin-top: 16px;
+    font-style: italic;
+    width: 600px;
+    font-size: 20px;
+}
+
+p.slogan:hover {
+    color: white;
+}
+
+/*  texte défilement */
+
+marquee {
+    width: 600px;
+    position: absolute;
+    left: 500px;
+    top: 350px;
+    font-size: 22px;
+    color:ghostwhite;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+/* _____________________________________________________________________________ */
+
+/* background */
+
+.film-section {
+    background-image: url(../images/main.jpg);
+    height: 850px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+/* titre de la section */
+h3.films-header {
+    background-color: beige;
+    border-radius: 25px;
+    color: black;
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration:overline underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+/* taille des images */
+
+img.tranformers {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.batman {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.iron-man {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.avatar {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+/* placer et mettre en forme chaque cadre films */
+div.content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 700px;
+    left: 180px;
+}
+
+article.one {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+article.two {
+    background-color: #05ABB8;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+
+article.three {
+    background-color: #05ABB8;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+
+article.four {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+
+/* taille des texte en dessous des films */
+
+h4.films {
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+/* texte résumé des films */
+
+p.transformers {
+    background-color: #05ABB8;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+p.batman {
+    background-color: #05ABB8;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+p.iron-man {
+    background-color: #05ABB8;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+p.avatar {
+    background-color: #05ABB8;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+p.batman:hover{
+    opacity: 1;
+}
+
+p.transformers:hover{
+    opacity: 1;
+}
+
+p.iron-man:hover{
+    opacity: 1;
+}
+
+p.avatar:hover{
+    opacity: 1;
+}
+
+div.synopsis-films {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    justify-content: space-between;
+    top: 300px;
+    left: 207px;
+    width: 1500px;
+    padding: 5px;
+    color: white;
+
+}
+
+
+/* Bouton "regarder" */
+
+button.regarder {
+    background-color: #05ABB8;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    border: thick double;
+    width: 335px;
+}
+
+form.bouton-regarder {
+    width: 1490px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 215px;
+    top: 300px;
+}
+
+button.regarder:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+/* centrer tous les composants */
+div.en-dessous-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* _____________________________________________________________________________ */
+
+/* background */
+
+section.series-section {
+    background-image: url(../images/background-series.jpg);
+    background-size: cover;
+    height: 870px;
+    margin: 0 auto;
+}
+
+/* titre de la section */
+h3.titre-series {
+    background-color: beige;
+    border-radius: 25px;
+    color: black;
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration:overline underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+/* taille des images */
+
+img.obiwan {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.gameoftrones {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.mandalorian {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+img.expanse {
+    width: 350px;
+    border-radius: 25px;
+    margin: 3px;
+}
+
+/* placer et mettre en forme chaque cadre films */
+
+div.series {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 1560px;
+    left: 180px;
+}
+
+/* tous les articles */
+
+article.article-one {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+article.article-two {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+article.article-three {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+}
+article.article-four {
+    background-color: #05ABB8;
+    width: 360px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/* taille des titre de séries */
+
+h4.series {
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* section actualité */
+
+/* background */
+
+div.actualites {
+    background-image: url(../images/background-actualités.jpg);
+    background-size: cover;
+    height: 870px;
+}
+
+h3.titre-series {
+    background-color: beige;
+    border-radius: 25px;
+    color: black;
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration:overline underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+/* actu manga */
+
+div.actu {
+    background-color: #05ABB8;
+    width: 320px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3.titre-actu {
+    background-color: beige;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+div.texte-actu {
+    font-size: 18px;
+    color: white;
+    list-style: none;
+    line-height: 27px;
+    margin-left: 15px;
+    background-color: black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.tout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 250px;
+}
+
+div.texte-actu:hover {
+    background-color: white;
+    color: black;
+}
+
+/* effet */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  position: relative;
+  margin: 250px;
+  left: 20;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 25px #05ABB8, 
+      0px 0px 50px #05ABB8, 
+      0px 0px 50px #05ABB8, 
+      0px 0px 50px black,
+      0px 0px 150px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px 10px 100px black,
+      0px -10px 100px black,
+      0px -10px 100px black
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* pied de page */
+
+footer {
+    background-color: #E8DCC2;
+    width: 1905px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.foot {
+    background-color: #05ABB8;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid;
+    list-style: none;
+    line-height: 20px;
+}
+
+.support {
+    color: white;
+}
+
+a {
+    color: white;
+}
